@@ -1,21 +1,16 @@
 {
-  "title": "Simple Multipage Project Template Demo",
+  "title": "ㄚ湊 Minato | 個人網站",
   "description": "A simple multipage project template demo",
   "navItems": [
     {
       "page": "index",
-      "text": "Home",
+      "text": "個人介紹",
       "href": "index.html"
     },
     {
-      "page": "example",
-      "text": "Example",
-      "href": "example.html"
-    },
-    {
-      "page": "example/inner",
-      "text": "Example / Inner",
-      "href": "example/inner.html"
+      "page": "webcommission",
+      "text": "網頁委託",
+      "href": "webcommission.html"
     }
   ]
 }

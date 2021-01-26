@@ -1,21 +1,33 @@
-<nav id="nav" class="w-full h-12 absolute top-0 left-0 bg-white shadow">
-  <ul class="h-full flex">
-    <% data.navItems.forEach((item) => { %>
+<nav
+  id="nav"
+  class="w-full h-12 absolute top-0 left-0 bg-main-general-pink shadow"
+>
+<div class="w-full h-1 bg-main-deep-pink absolute top-0">
+
+</div>
+<div class="text-white absolute text-3xl top-2 left-5">
+  <p style="font-family: 'Pacifico', cursive;">Minato</p>
+</div>
+  <ul class="h-full flex justify-center items-center">
+    <% data.navItems.forEach((item, i) => { %>
     <li class="h-full">
-      <a class="
-        h-full 
-        px-4 
-        flex 
-        justify-center 
-        items-center  
-        hover:bg-gray-200
-        font-thin 
-        text-lg
-        <%= page === item.page ? 'bg-gray-400' : '' %>
-        <%= page === item.page ? 'text-white' : 'text-gray-500' %>
-        transition-colors
-        " href="<%= item.href %>"><%= item.text %></a>
+      <a
+        class="h-full px-4 flex justify-center items-center font-semibold text-white hover:text-black text-xl"
+        href="<%= item.href %>"
+        ><span class="relative"
+          ><%= item.text %> <% if (page === item.page) { %>
+          <div class="absolute left-0 w-full">
+            <div class="bg-white" style="height: 2px;"></div>
+          </div>
+          <% } %>
+        </span></a
+      >
     </li>
+    <% if (i === 0) { %>
+      <div class="flex justify-center items-center">
+        <div class="bg-white w-0.5 h-6"></div>
+      </div>
+    <% } %>
     <% }) %>
   </ul>
 </nav>
