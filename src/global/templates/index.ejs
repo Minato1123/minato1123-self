@@ -7,11 +7,28 @@
   <title><%= data.title %></title>
   <meta name="description" content="<%= data.description %>">
   </meta>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css"></noscript>
+  <link rel="preload stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"></noscript>
+  <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
+  <style>
+    [x-cloak] { display: none; }
+  </style>
+  <noscript>
+    <style>
+      [x-cloak] { display: block !important; }
+    </style>
+  </noscript>
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen relative">
+  <%- include('background') %>
   <%- include('nav') %>
-  <main id="<%= page %>" class="h-screen pt-12 pb-8 flex flex-col justify-center items-center">
+  <%- include('top') %>
+  <main id="<%= page %>" class="min-h-screen pt-16 sm:pt-48 xl:pt-16">
     <%- partialPageHtml %>
   </main>
 
