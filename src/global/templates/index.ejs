@@ -35,7 +35,18 @@
   </main>
 
   <%- include('footer') %>
-
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    const wow = new WOW({
+      boxClass:     'wow',      // default
+      animateClass: 'animate__animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    })
+    wow.init();
+  </script>
 </body>
 
 </html>
