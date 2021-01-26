@@ -26,6 +26,29 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      main: {
+        'deep-pink': '#FF8A8A',
+        'general-pink': '#FBB6B6',
+        'white-pink': '#FFEFEF',
+        'orange-pink': '#FFB09C'
+
+      },
+      title: {
+        'animate-orange': '#FFA56A',
+        'animate-orange-fonts': '#C46A2F',
+        'webtoon-green': '#9BDF96',
+        'webtoon-green-background': '#36A42F',
+        'webtoon-green-fonts': '#0C3400',
+        'youtube-red': '#FF6D6D',
+        'youtube-red-fonts': '#C42A2A',
+        'music-purple': '#AABAE6',
+        'music-purple-background': '#537DC4',
+        'music-purple-fonts': '#2E1D75',
+        'sports-blue': '#62ACDE',
+        'sports-blue-background': '#3476A2',
+        'sports-blue-fonts': '#022D65',
+
+      }
     },
     spacing: {
       px: '1px',
