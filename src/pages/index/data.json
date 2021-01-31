@@ -1,1 +1,28 @@
-{}
+{
+  "introButton":[
+    {
+      "sort": "主坑動漫畫",
+      "id": "animate"
+    },
+    {
+      "sort": "Webtoon",
+      "id": "webtoon"
+    },
+    {
+      "sort": "Youtuber",
+      "id": "youtuber"
+    },
+    {
+      "sort": "音樂",
+      "id": "music"
+    },
+    {
+      "sort": "運動",
+      "id": "sports"
+    },
+    {
+      "sort": "其他",
+      "id": "else"
+    }
+  ]
+}
